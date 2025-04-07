@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity | Modern Tracking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                <span class="logo-text">Clarity</span>
+            </div>
+            
+            <div class="nav-section">
+                <div class="nav-title">Main</div>
+                <div class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Dashboard
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Ideas
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                        <line x1="2" y1="10" x2="22" y2="10"></line>
+                    </svg>
+                    Finances
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Notes
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">Categories</div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                    </svg>
+                    Work
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Personal
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    Health
+                </div>
+                <div class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Pending
+                </div>
+            </div>
+            
+            <div class="user-menu">
+                <div class="user-avatar">JS</div>
+                <div class="user-info">
+                    <div class="user-name">John Smith</div>
+                    <div class="user-role">Premium Account</div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="19" cy="12" r="1"></circle>
+                    <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="main-wrapper">
+            <div class="main-content">
+                <div class="header">
+                    <button class="mobile-menu-button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <h1>Dashboard</h1>
+                    <div class="header-actions">
+                        <div class="icon-button notification-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                            <div class="badge">3</div>
+                        </div>
+                        <div class="icon-button">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                            </svg>
+                        </div>
+                        <div class="button" data-modal-target="newTransactionModal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Add New
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search for ideas, transactions...">
+                </div>
+
+                <div class="dashboard" id="dashboardSection">
+                    <div class="card" role="button" tabindex="0">
+                        <div class="card-header">
+                            <div class="card-title">Balance</div>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-value">$4,296.75</div>
+                        <div class="card-subtitle">Total Balance</div>
+                        <div class="card-trend positive">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            12.4% this month
+                        </div>
+                    </div>
+
+                    <div class="card" role="button" tabindex="0">
+                        <div class="card-header">
+                            <div class="card-title">Income</div>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                                    <polyline points="5 12 12 5 19 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-value">$2,846.00</div>
+                        <div class="card-subtitle">This Month</div>
+                        <div class="card-trend positive">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            8.7% vs last month
+                        </div>
+                    </div>
+
+                    <div class="card" role="button" tabindex="0">
+                        <div class="card-header">
+                            <div class="card-title">Expenses</div>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <polyline points="19 12 12 19 5 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-value">$1,249.25</div>
+                        <div class="card-subtitle">This Month</div>
+                        <div class="card-trend negative">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                                <polyline points="17 18 23 18 23 12"></polyline>
+                            </svg>
+                            4.2% vs last month
+                        </div>
+                    </div>
+
+                    <div class="card" role="button" tabindex="0">
+                        <div class="card-header">
+                            <div class="card-title">Ideas</div>
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-value">12</div>
+                        <div class="card-subtitle">Active Ideas</div>
+                        <div class="card-trend positive">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            3 new this week
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab active" id="ideasTab" onclick="switchTab('ideas')">Ideas</div>
+                    <div class="tab" id="transactionsTab" onclick="switchTab('transactions')">Transactions</div>
+                </div>
+
+                <div class="section ideas-section" id="ideasSection">
+                    <div class="section-header">
+                        <div class="section-title">Recent Ideas</div>
+                        <div class="button" data-modal-target="newIdeaModal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Add Idea
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Created</th>
+                                    <th>Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>App redesign for client project</td>
+                                    <td><span class="tag">Work</span></td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td>Mar 28, 2025</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td>Create personal budget template</td>
+                                    <td><span class="tag">Personal</span></td>
+                                    <td><span class="status completed">Completed</span></td>
+                                    <td>Mar 24, 2025</td>
+                                    <td>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td>Research investment options</td>
+                                    <td><span class="tag">Finance</span></td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td>Mar 22, 2025</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td>Plan family vacation</td>
+                                    <td><span class="tag">Personal</span></td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td>Mar 20, 2025</td>
+                                    <td>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td>Website optimization project</td>
+                                    <td><span class="tag">Work</span></td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td>Mar 18, 2025</td>
+                                    <td>High</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section transactions-section" id="transactionsSection">
+                    <div class="section-header">
+                        <div class="section-title">Recent Transactions</div>
+                        <div class="button" data-modal-target="newTransactionModal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Add Transaction
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Freelance Design Project</td>
+                                    <td><span class="tag">Income</span></td>
+                                    <td class="amount positive">+$1,200.00</td>
+                                    <td>Mar 30, 2025</td>
+                                    <td>Deposit</td>
+                                </tr>
+                                <tr>
+                                    <td>Rent Payment</td>
+                                    <td><span class="tag">Housing</span></td>
+                                    <td class="amount negative">-$850.00</td>
+                                    <td>Mar 29, 2025</td>
+                                    <td>Withdrawal</td>
+                                </tr>
+                                <tr>
+                                    <td>Grocery Shopping</td>
+                                    <td><span class="tag">Food</span></td>
+                                    <td class="amount negative">-$124.35</td>
+                                    <td>Mar 27, 2025</td>
+                                    <td>Withdrawal</td>
+                                </tr>
+                                <tr>
+                                    <td>Client Payment</td>
+                                    <td><span class="tag">Income</span></td>
+                                    <td class="amount positive">+$950.00</td>
+                                    <td>Mar 25, 2025</td>
+                                    <td>Deposit</td>
+                                </tr>
+                                <tr>
+                                    <td>Internet Bill</td>
+                                    <td><span class="tag">Utilities</span></td>
+                                    <td class="amount negative">-$79.99</td>
+                                    <td>Mar 24, 2025</td>
+                                    <td>Withdrawal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section notes-section" id="notesSection" style="display: none;">
+                    <div class="section-header">
+                        <div class="section-title">Notes</div>
+                        <div class="button">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Add Note
+                        </div>
+                    </div>
+                    <div class="notes-container">
+                        <div class="note-card">
+                            <div class="note-header">
+                                <h3>Meeting Notes</h3>
+                                <span class="note-date">Mar 30, 2025</span>
+                            </div>
+                            <p>Discuss project timeline and deliverables with the team.</p>
+                        </div>
+                        <div class="note-card">
+                            <div class="note-header">
+                                <h3>Ideas for Next Week</h3>
+                                <span class="note-date">Mar 29, 2025</span>
+                            </div>
+                            <p>Research new features and improvements for the platform.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section work-section" id="workSection" style="display: none;">
+                    <div class="section-header">
+                        <div class="section-title">Work Projects</div>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Due Date</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Website Redesign</td>
+                                    <td><span class="status active">In Progress</span></td>
+                                    <td>Apr 15, 2025</td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App Development</td>
+                                    <td><span class="status pending">Planning</span></td>
+                                    <td>May 1, 2025</td>
+                                    <td>25%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section personal-section" id="personalSection" style="display: none;">
+                    <div class="section-header">
+                        <div class="section-title">Personal Tasks</div>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Category</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grocery Shopping</td>
+                                    <td>Shopping</td>
+                                    <td>Apr 2, 2025</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Doctor Appointment</td>
+                                    <td>Health</td>
+                                    <td>Apr 5, 2025</td>
+                                    <td><span class="status active">Scheduled</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section health-section" id="healthSection" style="display: none;">
+                    <div class="section-header">
+                        <div class="section-title">Health Tracking</div>
+                    </div>
+                    <div class="health-stats">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Steps Today</div>
+                            </div>
+                            <div class="card-value">8,547</div>
+                            <div class="card-subtitle">Goal: 10,000</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Water Intake</div>
+                            </div>
+                            <div class="card-value">1.8L</div>
+                            <div class="card-subtitle">Goal: 2.5L</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section pending-section" id="pendingSection" style="display: none;">
+                    <div class="section-header">
+                        <div class="section-title">Pending Items</div>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Category</th>
+                                    <th>Due Date</th>
+                                    <th>Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Review Project Proposal</td>
+                                    <td>Work</td>
+                                    <td>Apr 3, 2025</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td>Pay Utility Bills</td>
+                                    <td>Finance</td>
+                                    <td>Apr 4, 2025</td>
+                                    <td>Medium</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Idea Modal -->
+    <div class="modal" id="newIdeaModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Idea</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form id="newIdeaForm">
+                <div class="form-group">
+                    <label for="idea-title">Title</label>
+                    <input type="text" id="idea-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="idea-category">Category</label>
+                    <select id="idea-category" required>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="health">Health</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idea-priority">Priority</label>
+                    <select id="idea-priority" required>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idea-status">Status</label>
+                    <select id="idea-status" required>
+                        <option value="active">Active</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idea-description">Description</label>
+                    <textarea id="idea-description" rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="button secondary" onclick="toggleModal('newIdeaModal', false)">Cancel</button>
+                    <button type="submit" class="button">Add Idea</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- New Transaction Modal -->
+    <div class="modal" id="newTransactionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Transaction</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form id="newTransactionForm">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="transaction-type">Type</label>
+                    <select id="transaction-type" required>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="transaction-category">Category</label>
+                    <select id="transaction-category" required>
+                        <option value="income">Income</option>
+                        <option value="housing">Housing</option>
+                        <option value="food">Food</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="health">Health</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="transaction-date">Date</label>
+                    <input type="date" id="transaction-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="transaction-notes">Notes</label>
+                    <textarea id="transaction-notes" rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="button secondary" onclick="toggleModal('newTransactionModal', false)">Cancel</button>
+                    <button type="submit" class="button">Add Transaction</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
